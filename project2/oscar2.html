@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #99649b;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 50px; /* adds space around all content */
+            padding: 0px; 
+            color: #1f1137;
+        }
+
+        h1 {
+            color: #3c2a47;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .justified-text {
+            text-align: justify; /* justifies block of text */
+        }
+        .image {
+            float: left; /* float moves image to whatevr side you specify */
+            width: 200px; /* shrink image */
+            height: auto; /* keeps ratio */
+            margin-left: -42px; /* this helped me realign the image with the justified text */
+            margin-right: 30px; /* apparently adds space betw image and text */
+
+            /* now to adjust to make responsive images*/
+            max-width: 100%;
+            height: auto;
+            display: block;
+
+            border: 5px solid #dc9999;
+            border-radius: 6px;
+            display: block;
+        }
+        /* Cecily gif */
+        .image2 {
+            float: left; /* float moves image to whatevr side you specify */
+            width: 280px; /* shrink image */
+            height: auto; /* keeps ratio */
+            margin-left: -5px; /* this helped me realign the image with the justified text*/
+            margin-right: 30px; /* apparently adds space betw image and text */
+
+            border: 5px solid #dc9999;
+            border-radius: 6px;
+            display: block;
+        }
+
+        video {
+
+            border: 5px solid #dc9999;
+            border-radius: 6px;
+            display: block;
+        }
+
+        audio {
+            width: 300px; 
+            filter: invert(1); /* super coooool trick to make it more edgy*/
+        }
+
+        .quote {
+            /* i tried to tab this quote away from the picture using this method, but it didn't quite work
+            how i thought it would ... need to still figure that out. Used <pre> in the meantime*/
+            margin-left: 80px;
+            padding-left: 60px;
+            border-left: 3px;
+            font-style: italic;
+            color:rgb(53, 44, 110);
+
+        }
+
+        /* how to color links when normal and then when user hovers over them */
+        /* "a" is an anchor tag and allos inline css color changes*/
+        a:link { 
+            color: #7c2ca8; 
+        }
+
+        a:hover { 
+            color: #a83838; /* Color when hovering */
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        nav {
+            background-color: #dc9999; 
+            padding: 15px; 
+        }
+
+
+        p {
+            line-height: 1.75; 
+            }
+
+
+        hr {
+            border: none;  
+            height: 3px; 
+            background-color: #d7a6ff;  
+        }
+
+        body {
+            border: 6px solid #ef9670; 
+            padding: 20px; 
+            margin: 10px; 
+        }
+
+
+
+    </style>
+    
+</head>
+<body>
+    <h1>
+     <center> WILDE ABOUT OSCAR </center>
+    </h1>
+    <hr></hr>
+    <header>
+        <nav>
+            <center>
+            <a href="/About/">About Oscar Wilde</a> |
+            <a href="/Blog Posts/">Complete Works</a> |
+            <a href="/Videos/">Upcoming Events & Plays</a> |
+            <a href="/Search/">Search</a>
+        </center>
+        </nav>
+    </header>
+    <p> <blockquote> <center><q>Everything in moderation, including moderation</q> <cite>- Oscar Wilde</cite></center></blockquote></p>
+    <main>
+        <newline></newline>
+        <h2>
+        <p> Welcome to the  <b> Oscar Wilde </b> Fan Club. </p></h2>
+        <newline></newline>
+        <!-- the below text was AI generated since I am not being assessed on my writing skills
+         with regards to this website. I used chatgpt to maximize efficiency in this instance.
+         My prompt was "write me a paragraph of text about Oscar Wilde for a fan club website 
+         which is witty and youthful. "-->
+        <p class="justified-text"> Oscar Wilde wasn’t just a writer—he was a legend draped in velvet 
+            and wit sharper than a well-cut cravat. Known for his dazzling plays 
+            like <i>The Importance of Being Earnest</i> and his beautifully tragic novel 
+            <i>The Picture of Dorian Gray</i>, Wilde mastered the art of blending humor 
+            with biting social critique.
+            
+            <br></br>
+            
+            A true icon of individuality, he lived by 
+            his own rules, turning everyday life into a stage for brilliance and 
+            rebellion. Whether you love him for his genius one-liners 
+            ("Be yourself; everyone else is already taken") or
+             his unapologetic flair, one thing’s for sure -— Oscar Wilde was, 
+             and still is, <b>the King of Clever.</b></p>
+    </main>
+    <hr></hr>
+   <h3> First Essays: Intentions</h3>
+    <figure>
+    <img src="oscar.jpg" alt="Oscar Wilde, London, 1895" class="image">
+    </figure>
+
+    <p class="justified-text"> During the late 19th century, Wilde's collection of essays entitled <i>"Intentions"</i> wherein Wilde 
+    discusses that life imitates Art far more than Art imitates life.</p>
+    <p>
+        <pre>
+        <blockquote class="quote">
+        "Life imitates Art far more than Art imitates Life. 
+        
+        It is Art that makes us aware of our own petty emotions, and teaches us 
+        how to see things. The great achievements of the imagination always precede 
+        and determine the achievements of the reality. 
+        The final revelation is that Lying, the telling of beautiful untrue things, 
+        is the proper aim of Art."
+    </blockquote>
+    </pre>
+    </p>
+    <aside>
+    <figcaption> <i> Figure 1: Oscar Wilde posing for a formal portrait, 1895. </i></figcaption>
+    </aside>
+    <br></br>
+    <hr></hr>
+    <h3> Oscar Wilde Biographies - <i>Wilde About Oscar </i>Reviews</h3>
+    <section>
+        <img src="cecily.gif" alt="Cecily, The Importance of Being Earnest" class="image2" />
+        <article>
+                <h5> <u>"Oscar Wilde: A Biography"</u> by <mark>Richard Ellmann</mark></h5>
+        </article>
+        <article>
+                <h5><u>"Oscar Wilde: The Unrepentant Years"</u> by Nicholas Frankel</h5>
+        </article>
+        <article>
+                <h5><u>"The Secret Life of Oscar Wilde"</u> by Neil McKenna</h5>
+        </article>
+    </section>
+    <hr></hr>
+    <section>
+    <h4>Early Life and Education</h4>
+
+    <!--Some of this literal text was adapted from chatgpt-->
+    <ul class="justified-text">
+        <li> Born on October 16, 1854, in Dublin, Ireland.
+        <li> His full name was Oscar Fingal O’Flahertie Wills Wilde.
+        <li> His father, Sir William Wilde, was a famous surgeon. His mother, Jane Wilde, was a poet ("Speranza") and an Irish Nationalist.
+        <li> Wilde attended Trinity College, Dublin, where he won the Berkley Gold Medal for his work in Greek studies.
+        <li> He later attended Magdalen College, Oxford University and studied the Classics and Literature.
+        <li> After University, he moved to London and gained a reputation for his wit and flamboyance. 
+    </ul>
+</section>
+<hr></hr>
+<section>
+<h5>Wilde's List of Plays, in order of publication</h5>
+<ol>
+    <img src="earnest.jpg" alt="The Importance of Being Earnest" class="image" />
+    <li> Vera
+    <li> The Duchess of Padua
+    <li> Lady Windemere's fan
+    <li> A Woman of No Importance
+    <li> An Ideal Husband
+    <li> The Importance of Being Earnest
+    <li> Salomé <abbr>(op.posth)</abbr>
+    <li> La Sainte Courtisane <abbr>(op.posth)</abbr>
+    <li> A Florentine Tragedy <abbr>(op.posth)</abbr>
+</ol>
+</section>
+
+<hr></hr>
+
+<section>
+<aside>
+<h6> A bit more about my favorite play of Wilde's, <i>The Importance of Being Earnest</i></h6>
+<p class="justified">
+    Wilde cleverly names his main character Earnest Worthing to poke fun at the very meaning of the name 
+    <code>"earnestness"</code> which is the quality of honesty and sincerity. However, 
+    most of the play's tension stems from the fact that Earnest has lied about who he truly is. 
+</p>
+</aside>
+<h4>Watch the trailer for the play here: </h4>
+<iframe src="https://www.youtube.com/embed/a6au_dDoHBY" width="560" height="315" ></iframe>
+<p> Attached below is a text of the play that can be found online, free (since copyright has expired)</p>
+<embed src="importance play.pdf" type="application/pdf" width="600" height="400">
+
+
+</section>
+
+<section>
+    <h3>Watch the <i>Bunburyist</i> Scene</h3>
+    <video width="480" height="280" controls>
+        <source src="bunbury.mp4" type="video/mp4">
+        <source src="bunbury.mp4" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+
+</section>
+
+<section>
+    <h4>Alternatively, listen to the Bunburyist audio & read along!</h4>
+        <audio controls>
+            <source src="bunbury audio.mp4" type="video/mp4">
+            Your browser does not support the audio element.
+          </audio>
+
+</section>
+
+<!--learnt how to do this through w3 school-->
+    <svg width="100" height="100">
+      <circle cx="50" cy="50" r="40" stroke="red" stroke-width="4" fill="#ed9ae6" />
+    </svg>
+
+
+<hr></hr> <!-- horizontal line --> 
+<footer>
+<p>Created on <time datetime="2025-01-23">January 23, 2025.</time></p>
+<p> <b>Author:</b> Julia Collingwood | oscarwildefan@gmail.com | P.O. Box 188, 1235 University Blvd, Steubenville, Ohio, USA, 43952</p>
+</footer>
+
+</body>
+</html>
+
+<!---
+
+CSS Fundamentals (Required for All)
+Consistent color scheme (background, text, links, sections)
+Typography styles (font-family, sizes, weights, and spacing).
+Box model implementation (use of margin, padding, and border for spacing).
+Styled navigation bar (background color, hover effects, spacing).
+
+Team 2: Media styling (responsive images, video controls, audio player styling)
+Extra: Apply CSS filters to images or add an overlay effect. 
+
+-->
