@@ -1,0 +1,15 @@
+Convert your previous HTML+CSS project to Bootstrap by replacing custom CSS with Bootstrap’s built-in classes. Each team member will work individually on their own version of the web page, applying their assigned team’s Bootstrap topic.
+
+Post a PDF screenshot of your completed Bootstrap webpage and a link to your GitHub repository containing your code.
+
+You will also deploy your Bootstrap version on the VM.
+
+
+Requirements   
+Use Bootstrap classes and custom Bootstrap components to style your page.
+Use manual CSS overrides (only where Bootstrap does not provide a built-in class).
+- Apply the specific Bootstrap topic assigned to your team (see list below).
+- remains responsive using Bootstrap’s layout system.  
+
+Team 2: Typography & Utilities	
+Use Bootstrap classes for headings, spacing, colors instead of custom CSS.
