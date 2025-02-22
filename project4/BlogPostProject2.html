@@ -15,19 +15,6 @@
         <link rel="stylesheet" href="styles.css">
         <style>
 
-            @font-face {
-                font-family: 'PressStart2P-Regular';
-                src: url('fonts1/PressStart2P-Regular.ttf') format('truetype');
-                font-weight: normal;
-                font-style: normal;
-            }
-
-            @font-face {
-                font-family: 'FiraCode';
-                src: url('fonts1/FiraCode.ttf') format('truetype');
-                font-weight: normal;
-                font-style: normal;
-            }
 
             body {
                 background-color: #030425;
@@ -40,6 +27,7 @@
                 padding: 50px; 
                 margin: 10px; 
             }
+
     
             h1 {
                 color: #d6d6d6;
@@ -47,25 +35,15 @@
             }
             .justified-text {
                 text-align: justify; /* justifies block of text */
-            }
+            } 
 
-            img {
-                border: 5px solid #ffdc3e;
-                border-radius: 8px; /* this allows slightly rounded corners */
-            }   
-    
-            video {
-    
-                border: 5px solid #ffdc3e;
-                border-radius: 8px;
-                display: block;
-            }
     
             audio {
                 width: 300px; 
                 filter: invert(1); /* super coooool trick to make it more edgy*/
             }
     
+            /* no Bootstrap class for Quote */
             .quote {
             
                 margin-left: 80px;
@@ -99,35 +77,6 @@
             background-color: RGBA(var(--bs-dark-rgb), var(--bs-bg-opacity, 1)) !important;
             }
     
-            /* how to color links when normal and then when user hovers over them */
-            /* "a" is an anchor tag and allos inline css color changes*/
-            a:link { 
-                color: #24157b; 
-            }
-    
-            a:hover { 
-                color: #c54887; /* Color when hovering */
-                text-decoration: underline; /* Underline on hover */
-            }
-    
-            nav {
-                background-color: #ffffff; 
-                padding: 15px; 
-            }
-    
-    
-            p {
-                line-height: 1.75; 
-                }
-    
-    
-            hr {
-                border: none;  
-                height: 3px; 
-                background-color: #a4d7ff;  
-            }
-    
-    
     
         </style>
 </head>
@@ -140,8 +89,14 @@
         <h3>Joshua Fouch</h3>
         </center>
     </header>
+
+    <div class="fixed-top">
+        <button type="button" class="btn btn-light">Hello this is sticky</button>
+    </div>
+
     <center>
     <h4>Some Navigation links around my page:</h4> <!--Links to navigate around the page-->
+
     <nav class="text-bg-light">
         <a href="#Code Commenting">Code Commenting</a> |
         <a href="#AugustinePicture">St. Augustine Picture</a> |
@@ -234,7 +189,7 @@
 
        <h3>Picture of Spencer Glacier in Alaska, I took with my iPhone!</h3>
        <figure>
-            <img src="glacier.jpeg" alt="spencerglacier" style="width:80%"> <!--image--> 
+            <img src="glacier.jpeg" alt="spencerglacier" class="border border-secondary" style="width:80%"> <!--image--> 
        </figure>
        <br>
        <br>
