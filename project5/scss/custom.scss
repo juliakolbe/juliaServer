@@ -1,0 +1,128 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+/* some color variables */
+$blue:   #4d7bc0 !default;
+$color60:#EFD9CE; 
+$color30:#0D0628 !important;
+$color10:rgb(137, 0, 0);
+
+
+/* some blue shades for vibey-ness */
+    $blue-100: tint-color($blue, 80%) !default;
+    $blue-200: tint-color($blue, 60%) !default;
+    $blue-300: tint-color($blue, 40%) !default;
+    $blue-400: tint-color($blue, 20%) !default;
+    $blue-500: $blue !default;
+    $blue-600: shade-color($blue, 20%) !default;
+    $blue-700: shade-color($blue, 40%) !default;
+    $blue-800: shade-color($blue, 60%) !default;
+    $blue-900: shade-color($blue, 80%) !default;
+
+
+/* spacing elements */
+    $navspace: 10px !default;
+
+body {
+    background-color: $color60;
+}
+
+/*overriding bootstrap default navbar*/    
+.navbar {
+    display:flex;
+    background-color: $color30; /* background is blue 30 */
+    border-radius: 10px;
+    color:$color60; 
+    margin:10px;
+    padding:10px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+ul{
+    display:flex;
+    padding:$navspace;
+    z-index:2;  
+    
+    justify-content: center;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;  /*custom variable for navbar spacing*/
+}
+.nav-link{
+    padding:$navspace;
+}
+
+.nav-link:hover{
+    padding: $navspace;
+    color:grey;
+}
+
+.mea-culpa-regular {
+    font-family: "Mea Culpa", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 60px;
+    color: $color10;  /*header is red*/
+}
+
+.subheading {
+    font-family: "Mea Culpa", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.bg-dark{
+    background-color: $color30;
+    color:$color60;
+    border-radius: 5px;
+    margin:5px;
+}
+
+
+/* changing the color of links */
+$link-color:                              $color10 !default;
+$link-decoration:                         underline !default;
+$link-shade-percentage:                   30% !default;
+$link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-decoration:                   null !default;
+
+/* julia's button decorations for javascript assignment. Learnt from https://css-tricks.com/almanac/prpoerties/b/box-shadow/*/
+
+.buttonContainer {
+    display: flex; /* elements like the > arrows are laid in rows, so they're easier to "control" the layout...i guess */
+    gap: 20px; /* gap between them ol' buttons. */
+    justify-content: center; 
+    margin-top: 20px;
+}
+
+.glowButton {
+    background-color: #460548;
+    color: #fff3d9; 
+    border: 2px solid transparent;
+    padding: 15px 25px;
+    border-radius: 30px; /* gives it the bead shape */
+    font-size: 16px;
+    cursor: pointer; /* lil hand icon will appear when arrow hovers over it */
+    transition: all 0.3s ease; /* sexy smooth animation from the dark purple to light purple with the box shadow "fades in" over a period of 0.3 seconds */
+    box-shadow:
+        0 0 10px rgba(125, 75, 177, 0.4), /* shadow layers, made 3 to give it nice glowy effect */
+        0 0 20px rgba(125, 75, 177, 0.3), /* using rgba instead of hex codes allows you to get a softness/reduced opacity. A hex code would be fully opaque */
+        0 5px 15px rgba(125, 75, 177, 0.3), /* the "a" stands for alpha, and ranges from 0 to 1 and is a transparency scale. 0.3 means 30% opaque */
+}
+
+.glowButton:hover {
+
+    background-color: #862389;
+    transform: translateY(-2px); /* this gives the impression that the button floats a little upwards, thereby creating the shadows. 
+                                    Y is vertical axis so we are movin up or down, and - determines the upwards direction */
+    box-shadow:
+        0 0 15px rgba(156, 107, 226, 0.6), /* the 0 0 15 px values are the "halos" around the button */
+        0 0 30px rgba(156, 107, 226, 0.5),
+        0 8px 20px rgba(125, 75, 177, 0.4), /* halos increase in diameter during hover effect */
+}
+
+

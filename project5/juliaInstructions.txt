@@ -1,0 +1,3 @@
+
+Dynamic Captions: Load and display captions from a JSON file, updating them dynamically.
+Media Controls: Implement Play, Pause, and Stop buttons using JavaScript, styled with CSS.
