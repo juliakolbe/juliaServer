@@ -2,7 +2,7 @@
 /*  below is the code cycle to allow users to move through the various captions (prayers) */  
 
 let rosary = [];
-let index = -1;
+let prayerIndex = -1;
 
 function pray() {
     const prayerDisplay = document.getElementById("prayerDisplay");
@@ -12,34 +12,34 @@ function pray() {
         return;
     }
 
-    if (index === -1) {
+    if (prayerIndex === -1) {
         prayerDisplay.innerHTML = "Let me guide you through this Lenten Catholic rosary. Click next to begin.";
     }
-   else if (index >= 0 && index < rosary.length)
+   else if (prayerIndex >= 0 && prayerIndex < rosary.length)
     {
-        prayerDisplay.innerHTML = rosary[index];
+        prayerDisplay.innerHTML = rosary[prayerIndex];
     }
-    else if (index >= rosary.length) {
+    else if (prayerIndex >= rosary.length) {
         console.log("End of rosary");
         prayerDisplay.innerHTML = "Thank you for praying with us. May God bless you and keep you.";
-        index = rosary.length -1; /* -1 is good coding practice to ensure you don't go out of bounds/overflows */
+        prayerIndex = rosary.length -1; /* -1 is good coding practice to ensure you don't go out of bounds/overflows */
     }
 }
 
 function nextPrayer() {
-    index++;
-    console.log("Next prayer index: ", index); /* will display in "inspect elements" and will return the next index number to show that the index is working properly*/
-    if (index >= rosary.length) {
-        index = 0; 
+    prayerIndex++;
+    console.log("Next prayer index: ", prayerIndex); /* will display in "inspect elements" and will return the next index number to show that the index is working properly*/
+    if (prayerIndex >= rosary.length) {
+        prayerIndex = 0; 
     }
     pray();
 }
 
 function previousPrayer() {
-    index--;
-    console.log("Previous prayer index: ", index);
-    if (index < 0) {
-        index = rosary.length - 1; /* -1 is good coding practice to ensure you don't go out of bounds/overflows */
+    prayerIndex--;
+    console.log("Previous prayer index: ", prayerIndex);
+    if (prayerIndex < 0) {
+        prayerIndex = rosary.length - 1; /* -1 is good coding practice to ensure you don't go out of bounds/overflows */
     }
     pray();
 }
